@@ -8,8 +8,6 @@
         <title>Laravel</title>
     </head>
     <body class="antialiased">
-        {{-- <div class="container">
-        </div> --}}
         <table>
             <thead>
                 <tr>

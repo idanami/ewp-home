@@ -22,7 +22,6 @@ $(document).ready(function(){
                             +element[index].id+'</div><div class="product-title">'+ element[index].title +
                             '</div></div></td>';
                 product += '<td class="product-price">'+element[index].price+'</td>';
-                // product += '<td>'+element[index].price+'</td>';
                 product += attributes;
                 product += '<td class="product-categories">'+element[index].categories+'</td>';
                 product += '</tr>';

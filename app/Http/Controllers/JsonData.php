@@ -44,6 +44,7 @@ class JsonData extends Controller
         for ($a = 0; $a < count($productItems[$id]['labels']); $a++) {
             $checked = false;
             $addAttribute = $this->getAttributeItemByProduct($attributes,$productItems[$id]['labels'][$a]);
+
             if($a > 0){
                 foreach($attributesArray as $key => $value){
                     if($addAttribute['title'] === $value['title']){
@@ -71,8 +72,8 @@ class JsonData extends Controller
         $arrayAttributes = [];
         for ($i = 0; $i < count($attributes); $i++) {
             for ($a = 0; $a < count($attributes[$i]['labels']); $a++) {
-                $arrayAttributes['title'] = $attributes[$i]['title'];
                 if($attributes[$i]['labels'][$a]['id'] === $label){
+                    $arrayAttributes['title'] = $attributes[$i]['title'];
                     $attributesDescription = $attributes[$i]['labels'][$a]['title'];
                     $arrayAttributes['description'] = $attributesDescription;
                     return $arrayAttributes;
