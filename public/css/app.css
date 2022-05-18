@@ -43,7 +43,6 @@ th, td {
     white-space: nowrap;
     overflow: hidden;
     width: 15rem;
-    max-width: 15rem;
     text-align: center;
     text-overflow: clip;
 }
